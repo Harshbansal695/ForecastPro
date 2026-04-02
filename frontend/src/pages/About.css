@@ -1,0 +1,245 @@
+.about-page {
+  min-height: 100vh;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #0a1929 0%, #1a2332 50%, #0f1b2e 100%);
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 40px 0;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #e0e7ff;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #e0e7ff 0%, #b0e0e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-intro {
+  font-size: 18px;
+  color: #b0e0e6;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.metrics-section {
+  margin-bottom: 80px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.metric-card {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d4a6f 100%);
+  border-radius: 12px;
+  padding: 40px 32px;
+  text-align: center;
+  border: 1px solid rgba(74, 144, 226, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  border-color: rgba(74, 144, 226, 0.3);
+}
+
+.metric-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  color: #4a90e2;
+}
+
+.metric-value {
+  font-size: 42px;
+  font-weight: 700;
+  color: #e0e7ff;
+  margin-bottom: 8px;
+}
+
+.metric-label {
+  font-size: 16px;
+  color: #87ceeb;
+  opacity: 0.9;
+}
+
+.story-section {
+  margin-bottom: 80px;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-text {
+  color: #b0e0e6;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.story-text p {
+  margin-bottom: 20px;
+}
+
+.story-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-visual svg {
+  width: 200px;
+  height: 200px;
+  opacity: 0.8;
+}
+
+.mission-section {
+  margin-bottom: 80px;
+}
+
+.mission-card {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d4a6f 100%);
+  border-radius: 16px;
+  padding: 60px;
+  border: 1px solid rgba(74, 144, 226, 0.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
+  color: #4a90e2;
+}
+
+.mission-content {
+  color: #b0e0e6;
+  line-height: 1.8;
+}
+
+.mission-content .section-title {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.mission-content .section-title:first-of-type {
+  margin-top: 0;
+}
+
+.values-section,
+.team-section {
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #e0e7ff;
+  margin-bottom: 40px;
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
+.values-grid,
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.value-card,
+.team-card {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d4a6f 100%);
+  border-radius: 12px;
+  padding: 40px 32px;
+  text-align: center;
+  border: 1px solid rgba(74, 144, 226, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover,
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  border-color: rgba(74, 144, 226, 0.3);
+}
+
+.value-icon,
+.team-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  color: #4a90e2;
+}
+
+.value-title,
+.team-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e0e7ff;
+  margin-bottom: 12px;
+}
+
+.value-description {
+  font-size: 16px;
+  color: #b0e0e6;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .story-visual {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 36px;
+  }
+
+  .about-intro {
+    font-size: 16px;
+  }
+
+  .metrics-grid,
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-card {
+    padding: 40px 24px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
